@@ -1,4 +1,4 @@
-import { Children } from "@/types/global"
+import { Children } from '@/types/global'
 
 /** 컨테이너 컴포넌트 */
 export default function Container({ children }: Children) {

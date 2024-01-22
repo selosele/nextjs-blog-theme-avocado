@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link'
 
 /** 사이트 타이틀 컴포넌트 */
 export default function SiteTitle(props: SiteTitleProps) {

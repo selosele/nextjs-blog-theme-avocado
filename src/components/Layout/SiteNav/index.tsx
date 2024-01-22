@@ -1,4 +1,4 @@
-import IconButton from "@/components/Button/IconButton"
+import IconButton from '@/components/Button/IconButton'
 
 /** 사이트 네비게이션 컴포넌트 */
 export default function SiteNav() {

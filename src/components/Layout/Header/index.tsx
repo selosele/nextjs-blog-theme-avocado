@@ -1,5 +1,5 @@
-import SiteTitle from "../SiteTitle"
-import SiteNav from "../SiteNav"
+import SiteTitle from '../SiteTitle'
+import SiteNav from '../SiteNav'
 
 /** 레이아웃 Header 컴포넌트 */
 export default function Header() {
