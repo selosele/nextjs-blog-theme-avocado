@@ -1,10 +1,20 @@
+import { allPosts } from '.contentlayer/generated'
+import { compareDesc } from 'date-fns'
+import { Post } from '@/components/Post'
+
 /** 메인 콘텐츠 컴포넌트 */
 export default function Home() {
+  const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+
   return (
     <main className={`flex min-h-screen flex-col items-center justify-between p-24`}>
-      <div className={`z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex`}>
-        main
-      </div>
+      <ul className={`max-w-5xl w-full`}>
+        {posts
+          .filter((post) => post.published)
+          .map((post) => (
+            <Post.Card key={post._id} {...post} />
+        ))}
+      </ul>
     </main>
   )
 }
