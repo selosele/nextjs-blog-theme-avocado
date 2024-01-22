@@ -1,9 +1,9 @@
-import Link from "next/link";
+import Link from "next/link"
 
 /** 사이트 타이틀 컴포넌트 */
 export default function SiteTitle(props: SiteTitle) {
   return (
-    <Link href="/" className="text-3xl text-[#87a922] font-extrabold">
+    <Link href="/" className={`text-3xl text-[#87a922] font-extrabold`}>
       {props.name}
     </Link>
   )

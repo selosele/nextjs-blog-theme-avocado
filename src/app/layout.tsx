@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Children) {
   return (
     <html lang="ko">
+      <head>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+      </head>
+
       <body className={inter.className}>
         <Layout.Container>
           <Layout.Header />
