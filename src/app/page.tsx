@@ -2,7 +2,7 @@ import { allPosts } from '.contentlayer/generated'
 import { compareDesc } from 'date-fns'
 import { Post } from '@/components/Post'
 
-/** 메인 콘텐츠 컴포넌트 */
+/** Main contents component */
 export default function Home() {
   const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 

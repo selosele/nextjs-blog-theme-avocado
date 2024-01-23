@@ -1,4 +1,4 @@
-/** 아이콘 버튼 컴포넌트 */
+/** Icon button component */
 export default function IconButton(props: IconButtonProps) {
   return (
     <button type="button" className={`text-3xl`}>
@@ -11,12 +11,12 @@ export default function IconButton(props: IconButtonProps) {
   )
 }
 
-/** 아이콘 버튼 인터페이스 */
+/** Icon button props interface */
 interface IconButtonProps {
 
-  /** 아이콘 클래스 명 */
+  /** Icon className */
   icon: string
 
-  /** 텍스트 */
+  /** Icon button text */
   text?: string
 }

@@ -40,18 +40,18 @@ export default function Page({ params }: { params: PostParams }) {
   )
 }
 
-/** 포스트 파라미터 인터페이스 */
+/** Post Parameters interface */
 interface PostParams {
 
-  /** 포스트 작성일시(연도) */
+  /** Post create date(year) */
   year: string
 
-  /** 포스트 작성일시(월) */
+  /** Post create date(month) */
   month: string
 
-  /** 포스트 작성일시(일) */
+  /** Post create date(day) */
   day: string
 
-  /** 포스트 제목 */
+  /** Post title */
   slug: string
 }

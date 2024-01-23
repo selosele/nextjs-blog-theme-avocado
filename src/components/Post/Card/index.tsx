@@ -2,7 +2,7 @@ import { Post } from '.contentlayer/generated'
 import { format, parseISO } from 'date-fns'
 import Link from 'next/link'
 
-/** 포스트 리스트 아이템 컴포넌트 */
+/** Post list item component */
 export default function Card(post: Post) {
   return (
     <li className={`list-disc mb-4 p-2 w-full`}>

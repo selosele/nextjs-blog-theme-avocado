@@ -1,6 +1,6 @@
-/** 컴포넌트 props children 인터페이스 */
+/** Component props children interface */
 export interface Children {
 
-  /** 컴포넌트 props children */
+  /** Component props children */
   children: React.ReactNode
 }

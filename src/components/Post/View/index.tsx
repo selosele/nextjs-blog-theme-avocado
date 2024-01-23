@@ -7,7 +7,7 @@ const mdxComponents: MDXComponents = {
   a: ({ href, children }) => <Link href={href as string}>{children}</Link>,
 }
 
-/** 포스트 상세 컴포넌트 */
+/** Post detail component */
 export default function View(props: ViewProps) {
   const MDXContent = useMDXComponent(props.post.body.code)
 
@@ -27,8 +27,9 @@ export default function View(props: ViewProps) {
   )
 }
 
+/** Post detail props interface */
 interface ViewProps {
 
-  /** 포스트 상세 정보 */
+  /** Post data */
   post: Post
 }
