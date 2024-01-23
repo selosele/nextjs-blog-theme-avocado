@@ -22,7 +22,9 @@ export default function RootLayout({ children }: Children) {
         <Layout.Container>
           <Layout.Header />
           
-          {children}
+          <Layout.Main>
+            {children}
+          </Layout.Main>
 
           <Layout.Footer />
         </Layout.Container>
