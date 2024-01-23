@@ -12,7 +12,7 @@ export default function View(props: ViewProps) {
   const MDXContent = useMDXComponent(props.post.body.code)
 
   return (
-    <article className={`mx-auto prose`}>
+    <article className={`min-h-screen mx-auto prose`}>
       <div className={`mb-8 text-center`}>
         <time dateTime={props.post.date} className={`mb-1 text-xs text-gray-600`}>
           {new Intl.DateTimeFormat('ko').format(new Date(props.post.date))}
