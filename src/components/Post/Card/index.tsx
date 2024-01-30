@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Card(post: Post) {
   return (
     <li className={`list-disc mb-4 p-2 w-full`}>
-      <Link href={post.url} className={`font-bold`}>
+      <Link href={post.url} className={`font-bold text-2xl no-underline`}>
         {post.title}
       </Link>
       <time dateTime={post.date} className={`block`}>
