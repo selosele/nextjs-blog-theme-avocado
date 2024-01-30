@@ -1,10 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { Layout } from '@/components/Layout'
 import { Children } from '@/types/global'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import '@/styles/main.scss'
 
 export const metadata: Metadata = {
   title: 'Next.js blog theme Avocado',
@@ -15,10 +13,11 @@ export default function RootLayout({ children }: Children) {
   return (
     <html lang="ko">
       <head>
+        <link rel="stylesheet" href="/fonts/font.css" />
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
       </head>
 
-      <body className={inter.className}>
+      <body>
         <Layout.Container>
           <Layout.Header />
           
