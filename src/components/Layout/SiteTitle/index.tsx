@@ -3,7 +3,7 @@ import Link from 'next/link'
 /** Site title component */
 export default function SiteTitle(props: SiteTitleProps) {
   return (
-    <Link href="/" className={`text-center text-3xl text-[#87a922] font-extrabold`}>
+    <Link href="/" className={`text-center text-4xl text-[#87a922] font-extrabold`}>
       {props.name}
     </Link>
   )
