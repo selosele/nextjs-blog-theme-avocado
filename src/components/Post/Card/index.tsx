@@ -10,9 +10,11 @@ export default function Card(post: Post) {
         {post.title}
       </Link>
       
-      <p>{post.body.raw.substring(0, 200)}</p>
+      <p>
+        {post.body.raw.substring(0, 200)}
+      </p>
 
-      <time dateTime={post.date} className={`block`}>
+      <time dateTime={post.date} className={`block text-gray-500`}>
         {format(parseISO(post.date), 'LLLL d, yyyy')}
       </time>
     </li>
