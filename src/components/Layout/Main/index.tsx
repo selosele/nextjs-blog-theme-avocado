@@ -1,4 +1,4 @@
-import { Children } from "@/types/global";
+import { Children } from '@/types/global'
 
 /** Main component */
 export default function Main({ children }: Children) {

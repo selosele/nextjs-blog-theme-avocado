@@ -11,5 +11,5 @@ export default function SiteDescription(props: SiteDescriptionProps) {
 interface SiteDescriptionProps {
 
   /** Site description name */
-  name: string;
+  name: string
 }
